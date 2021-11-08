@@ -21,24 +21,38 @@ Bölüm=
 Sınıf=
 '''
 
-def sepet_fiyati():
+class urunler:
+    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
+   
+        
+    
+def sepet_fiyati(kar_orani):
     '''
     Fonksiyon urunlerin toplam fiyatini geri dönüş değeri olarak dondurmelidir. (5 puan)
     Sadece #------**------ işareti ile belirtilen 
     kısımlar arasını değiştiriniz. 
 
-    sonuc değişkenini doldurmanız beklenmektedir.
+    toplam değişkenini doldurmanız beklenmektedir.
     '''
     ekmek=urunler('ekmek',1,0.20,0.12)
     patates=urunler('patates',2,0.16,0.18)
     elma=urunler('elma',3,0.11,0.22)
     un=urunler('un',4,0.17,0.05)
     yumurta=urunler('yumurta',5,0.30,0.19)
-    
+    toplam=0   
     #-------**-----------
     #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
-    toplam = ekmek.urun_satis_fiyati() +
     #-------**-----------
     return toplam
 
 
+def odev_test():
+    sepet_toplam = sepet_fiyati(0.15)
+    if sepet_toplam==23.91218:
+        print("doğru")
+    else:
+        print("yanlış")
+
+
+#bu test methodunu kullanarak yazdığınız kodu test edebilirsiniz
+odev_test()
