@@ -15,16 +15,31 @@ urun fiyati hesaplarken once kar sonra otv ve kdv sirayla alis fiyatina eklenmel
 
 hazırlayan @aucan
 
-Öğrenci Ad Soyad=
-Öğrenci No=
-Bölüm=
-Sınıf=
+Öğrenci Ad Soyad=Fatma Nur Özkan
+Öğrenci No=2018507044
+Bölüm=YBS
+Sınıf= 4
 '''
 
 class urunler:
-    #kodunuzu bu yorum satırını silerek buraya yazınız, diğer kısımları değiştirmeyiniz.
-   
-        
+    urun_adi = -
+    urun_alis_fiyati = -
+    urun_otv_orani = 0
+    urun_kdv_orani =0
+    
+    def __init__ (self,aurun_adi,aurun_alis_fiyati,aurun_otv_orani,aurun_kdv_orani):
+          
+          self.urun_adi = aurun_adi
+          self.urun_alis_fiyati = aurun_alis_fiyati
+          self.urun_otv_orani.  = aurun_otv_orani
+          self.urun_kdv_orani   = aurun_kdv_orani
+    
+    def urun_satis_fiyati(self,kar_orani):
+    
+          self.urun_alis_fiyati = self.urun_alis_fiyati + (self.urun_alis_fiyati * kar_orani):
+          self.urun_alis_fiyati = self.urun_alis_fiyati + (self.urun_alis_fiyati * self.urun_satis_fiyati):
+          self.urun_alis_fiyati = self.urun_alis_fiyati + (self.urun_alis_fiyati * self.urun_satis_fiyati):
+          return self.urun_alis_fiyati
     
 def sepet_fiyati(kar_orani):
     '''
